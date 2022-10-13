@@ -5,18 +5,30 @@ using UnityEngine;
 
 public class HandFootUp : MonoBehaviour
 {
-    public Transform[] transforms;
+    public Transform rHandTransform;
+    public Transform lHandTransform;
+    public Transform rFootTransform;
+    public Transform lFootTransform;
     public float power = 300f;
+
+    private void Start()
+    {
+        rHandTransform = GameObject.Find("Hand_R").GetComponent<Transform>();
+        lHandTransform = GameObject.Find("Hand_L").GetComponent<Transform>();
+        rFootTransform = GameObject.Find("Ankle_R").GetComponent<Transform>();
+        lFootTransform = GameObject.Find("Ankle_L").GetComponent<Transform>();
+    }
+
 
     private void Update()
     {
-        if (Input.GetKey(KeyCode.A) && transforms[0].position.y <= 1.3586724996566773f)
-            transforms[0].GetComponent<Rigidbody>().AddForce(new Vector3(0f, power, 0f));
-        else if (Input.GetKey(KeyCode.S) && transforms[0].position.y <= 1.3586724996566773f)
-            transforms[1].GetComponent<Rigidbody>().AddForce(new Vector3(0f, power, 0f));
+        if (Input.GetKey(KeyCode.A) && rHandTransform.position.y <= 1.3586724996566773f)
+            rHandTransform.GetComponent<Rigidbody>().AddForce(new Vector3(0f, power, 0f));
+        else if (Input.GetKey(KeyCode.S) && lHandTransform.position.y <= 1.3586724996566773f)
+            lHandTransform.GetComponent<Rigidbody>().AddForce(new Vector3(0f, power, 0f));
         else if (Input.GetKey(KeyCode.D))
-            transforms[2].GetComponent<Rigidbody>().AddForce(new Vector3(0f, power, 0f));
+            rFootTransform.GetComponent<Rigidbody>().AddForce(new Vector3(0f, power, 0f));
         else if (Input.GetKey(KeyCode.F))
-            transforms[3].GetComponent<Rigidbody>().AddForce(new Vector3(0f, power, 0f));
+            lFootTransform.GetComponent<Rigidbody>().AddForce(new Vector3(0f, power, 0f));
     }
 }
