@@ -4,50 +4,18 @@ using UnityEngine;
 
 public class Move : MonoBehaviour
 {
-    #region Rigidbody
-    [SerializeField]
-    Rigidbody rightFootRigidbody;
-    [SerializeField]
-    Rigidbody leftFootRigidbody;
-    [SerializeField]
-    Rigidbody rightHandRigidbody;
-    [SerializeField]
-    Rigidbody leftHandRigidbody;
-    [SerializeField]
-    Rigidbody cubeRigidbody;
-    #endregion
+    public float moveSpeed = 500f;
 
-    #region Pos Vector
-    Vector3 rightFootPos;
-    Vector3 leftFootPos;
-    Vector3 rightHandPos;
-    Vector3 leftHandPos;
-    Vector3 headPos;
-    #endregion
-
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        #region Foot and Hand
-        if (Input.GetKeyDown(KeyCode.A))
-            rightFootRigidbody.AddForce(new Vector3(0f, 0f, 100f));
-        else if (Input.GetKeyDown(KeyCode.S))
-            leftFootRigidbody.AddForce(new Vector3(0f, 0f, 100f));
-        else if (Input.GetKeyDown(KeyCode.D))
-            rightHandRigidbody.AddForce(new Vector3(0f, 0f, 300f));
-        else if (Input.GetKeyDown(KeyCode.F))
-            leftHandRigidbody.AddForce(new Vector3(0f, 0f, 300f));
-        #endregion
-
-        #region Head
-        if(Input.GetKey(KeyCode.RightArrow))
-            cubeRigidbody.transform.Translate(new Vector3(0.01f, 0f, 0f));
-        else if (Input.GetKey(KeyCode.LeftArrow))
-            cubeRigidbody.transform.Translate(new Vector3(-0.01f, 0f, 0f));
-        else if (Input.GetKey(KeyCode.UpArrow))
-            cubeRigidbody.transform.Translate(new Vector3(0f, 0f, 0.01f));
+        if (Input.GetKey(KeyCode.UpArrow))
+            transform.Translate(new Vector3(0f, 0f, moveSpeed * Time.deltaTime));       
         else if (Input.GetKey(KeyCode.DownArrow))
-            cubeRigidbody.transform.Translate(new Vector3(0f, 0f, -0.01f));
-        #endregion
+            transform.Translate(new Vector3(0f, 0f, -moveSpeed * Time.deltaTime));
+        else if (Input.GetKey(KeyCode.RightArrow))
+            transform.Translate(new Vector3(moveSpeed * Time.deltaTime, 0f, 0f));
+        else if (Input.GetKey(KeyCode.LeftArrow))
+            transform.Translate(new Vector3(-moveSpeed * Time.deltaTime, 0f, 0f));
+
     }
 }

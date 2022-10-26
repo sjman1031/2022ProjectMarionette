@@ -9,7 +9,10 @@ public enum BTNType
     control,
     Option,
     Shop,
-    Exit
+    Exit,
+    Back,
+    Start,
+    StageBack
 }
 public class MainUI : MonoBehaviour
 {

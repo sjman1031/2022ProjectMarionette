@@ -7,8 +7,7 @@ public class GameSceneMove : MonoBehaviour
 {
     public void GameSceneCtrl()
     {
-        SceneManager.LoadScene("Demo");
-        Debug.Log("Game Scene Go");
+        SceneManager.LoadScene("GamePlay");
     }
 
 }

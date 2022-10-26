@@ -1,0 +1,357 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae81b591db69ebe46b130a11ccaa2728, type: 3}
+  m_Name: UI_Skin Default
+  m_EditorClassIdentifier: 
+  showIcons: 1
+  icons:
+  - {fileID: 21300010, guid: 80ecdf2be230880498d1946d0133774b, type: 3}
+  - {fileID: 21300010, guid: 80ecdf2be230880498d1946d0133774b, type: 3}
+  - {fileID: 21300008, guid: 80ecdf2be230880498d1946d0133774b, type: 3}
+  - {fileID: 21300000, guid: 80ecdf2be230880498d1946d0133774b, type: 3}
+  - {fileID: 21300026, guid: 80ecdf2be230880498d1946d0133774b, type: 3}
+  - {fileID: 21300000, guid: ee43820b2700395498e65468ba460f12, type: 3}
+  - {fileID: 21300038, guid: 80ecdf2be230880498d1946d0133774b, type: 3}
+  - {fileID: 21300000, guid: fd380d6f4c1fb5a479e3976032e48a4a, type: 3}
+  - {fileID: 21300014, guid: 80ecdf2be230880498d1946d0133774b, type: 3}
+  - {fileID: 21300002, guid: 7a11a235ab1099c40a15bff9c6c135a0, type: 3}
+  - {fileID: 21300000, guid: bf3954be1959d1544a8b6c482d9e22a9, type: 3}
+  - {fileID: 21300000, guid: 2d9337e4ccdf6d64d81f82893bd052f0, type: 3}
+  - {fileID: 21300000, guid: 21c8a5fad47760c4a8993d2113ff94ce, type: 3}
+  - {fileID: 21300000, guid: d00ee5a4519c8b347b6b4fb8e8cea1a6, type: 3}
+  - {fileID: 0}
+  - {fileID: 21300040, guid: 80ecdf2be230880498d1946d0133774b, type: 3}
+  - {fileID: 21300038, guid: 80ecdf2be230880498d1946d0133774b, type: 3}
+  - {fileID: 21300018, guid: 80ecdf2be230880498d1946d0133774b, type: 3}
+  - {fileID: 21300000, guid: 7a11a235ab1099c40a15bff9c6c135a0, type: 3}
+  - {fileID: 21300000, guid: 95216ce90780453488e76abe32e4c581, type: 3}
+  - {fileID: 21300032, guid: 80ecdf2be230880498d1946d0133774b, type: 3}
+  - {fileID: 21300000, guid: 5d40cb170521f19478b802dae7234d6a, type: 3}
+  - {fileID: 21300016, guid: 80ecdf2be230880498d1946d0133774b, type: 3}
+  - {fileID: 21300024, guid: 80ecdf2be230880498d1946d0133774b, type: 3}
+  - {fileID: 21300000, guid: 52971d1051421ab478b3f74e7e31040d, type: 3}
+  - {fileID: 21300022, guid: 80ecdf2be230880498d1946d0133774b, type: 3}
+  - {fileID: 21300002, guid: 80ecdf2be230880498d1946d0133774b, type: 3}
+  - {fileID: 21300040, guid: 80ecdf2be230880498d1946d0133774b, type: 3}
+  - {fileID: 21300032, guid: 80ecdf2be230880498d1946d0133774b, type: 3}
+  showText: 0
+  defaultFont: {fileID: 11400000, guid: b2dfe93d6516d5847992027f95bf7e24, type: 2}
+  defaultFontColor: {r: 1, g: 1, b: 1, a: 1}
+  fontSizes: 18000000200000004000000080000000
+  defaultTexts:
+  - myFontAsset: 0
+    font: {fileID: 11400000, guid: b2dfe93d6516d5847992027f95bf7e24, type: 2}
+    myFontSize: 0
+    size: 24
+    myFontColor: 0
+    color: {r: 1, g: 1, b: 1, a: 1}
+  - myFontAsset: 0
+    font: {fileID: 11400000, guid: b2dfe93d6516d5847992027f95bf7e24, type: 2}
+    myFontSize: 0
+    size: 32
+    myFontColor: 0
+    color: {r: 1, g: 1, b: 1, a: 1}
+  - myFontAsset: 0
+    font: {fileID: 11400000, guid: b2dfe93d6516d5847992027f95bf7e24, type: 2}
+    myFontSize: 0
+    size: 64
+    myFontColor: 0
+    color: {r: 1, g: 1, b: 1, a: 1}
+  - myFontAsset: 0
+    font: {fileID: 11400000, guid: b2dfe93d6516d5847992027f95bf7e24, type: 2}
+    myFontSize: 0
+    size: 128
+    myFontColor: 0
+    color: {r: 1, g: 1, b: 1, a: 1}
+  showWindow: 0
+  windowBK:
+    sprite: {fileID: 21300000, guid: 86ed3c8d99757c346877ab9fedfd1d1b, type: 3}
+    color: {r: 1, g: 1, b: 1, a: 1}
+  windowHeaderText:
+    myFontAsset: 0
+    font: {fileID: 11400000, guid: b2dfe93d6516d5847992027f95bf7e24, type: 2}
+    myFontSize: 0
+    size: 24
+    myFontColor: 0
+    color: {r: 1, g: 1, b: 1, a: 1}
+  windowText:
+    myFontAsset: 0
+    font: {fileID: 11400000, guid: b2dfe93d6516d5847992027f95bf7e24, type: 2}
+    myFontSize: 1
+    size: 32
+    myFontColor: 0
+    color: {r: 1, g: 1, b: 1, a: 1}
+  windowBigText:
+    myFontAsset: 0
+    font: {fileID: 11400000, guid: b2dfe93d6516d5847992027f95bf7e24, type: 2}
+    myFontSize: 2
+    size: 64
+    myFontColor: 0
+    color: {r: 1, g: 1, b: 1, a: 1}
+  windowScrollbarBK:
+    sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+    color: {r: 0.12156863, g: 0.32941177, b: 0.73333335, a: 1}
+  windowScrollbarHandle:
+    sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+    color: {r: 0.40784314, g: 0.6901961, b: 0.9411765, a: 1}
+  showInputField: 0
+  inputFieldBK:
+    sprite: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
+    color: {r: 1, g: 1, b: 1, a: 0.43529412}
+  inputFieldText:
+    myFontAsset: 0
+    font: {fileID: 11400000, guid: b2dfe93d6516d5847992027f95bf7e24, type: 2}
+    myFontSize: 1
+    size: 32
+    myFontColor: 0
+    color: {r: 1, g: 1, b: 1, a: 1}
+  showScreen: 0
+  screenBK:
+    sprite: {fileID: 21300000, guid: 0910efe8567c1f34f9a1b5373a9fc41d, type: 3}
+    color: {r: 1, g: 1, b: 1, a: 1}
+  screenHeaderText:
+    myFontAsset: 0
+    font: {fileID: 11400000, guid: b2dfe93d6516d5847992027f95bf7e24, type: 2}
+    myFontSize: 4
+    size: 42
+    myFontColor: 0
+    color: {r: 1, g: 1, b: 1, a: 1}
+  showButton: 0
+  buttonSprite:
+    sprite: {fileID: 21300006, guid: 80ecdf2be230880498d1946d0133774b, type: 3}
+    color: {r: 1, g: 1, b: 1, a: 1}
+  buttonSpriteSelected:
+    sprite: {fileID: 21300004, guid: 80ecdf2be230880498d1946d0133774b, type: 3}
+    color: {r: 1, g: 1, b: 1, a: 1}
+  buttonSpriteOff:
+    sprite: {fileID: 21300012, guid: 80ecdf2be230880498d1946d0133774b, type: 3}
+    color: {r: 1, g: 1, b: 1, a: 1}
+  buttonText:
+    myFontAsset: 0
+    font: {fileID: 11400000, guid: b2dfe93d6516d5847992027f95bf7e24, type: 2}
+    myFontSize: 1
+    size: 32
+    myFontColor: 0
+    color: {r: 1, g: 1, b: 1, a: 1}
+  buttonCountText:
+    myFontAsset: 0
+    font: {fileID: 11400000, guid: b2dfe93d6516d5847992027f95bf7e24, type: 2}
+    myFontSize: 1
+    size: 32
+    myFontColor: 0
+    color: {r: 1, g: 1, b: 1, a: 1}
+  showOptionSoundElement: 0
+  optionSoundElementBK:
+    sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+    color: {r: 1, g: 1, b: 1, a: 0.39215687}
+  optionSoundElementSliderBK:
+    sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+    color: {r: 0.07058824, g: 0.19215687, b: 0.42745098, a: 1}
+  optionSoundElementSliderFill:
+    sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+    color: {r: 0.36078432, g: 0.6039216, b: 0.8235294, a: 1}
+  optionSoundElementSliderHandle:
+    sprite: {fileID: 0}
+    color: {r: 1, g: 1, b: 1, a: 1}
+  optionSoundElementText:
+    myFontAsset: 0
+    font: {fileID: 11400000, guid: b2dfe93d6516d5847992027f95bf7e24, type: 2}
+    myFontSize: 1
+    size: 32
+    myFontColor: 0
+    color: {r: 1, g: 1, b: 1, a: 1}
+  showInfoBar: 0
+  infoBarBK:
+    sprite: {fileID: 21300000, guid: 6d49dbe317225624e96076b63859c246, type: 3}
+    color: {r: 0, g: 0, b: 0, a: 0.39215687}
+  infoBarTimerBK:
+    sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+    color: {r: 0, g: 0, b: 0, a: 0.49019608}
+  infoBarText:
+    myFontAsset: 0
+    font: {fileID: 11400000, guid: b2dfe93d6516d5847992027f95bf7e24, type: 2}
+    myFontSize: 0
+    size: 24
+    myFontColor: 0
+    color: {r: 1, g: 1, b: 1, a: 1}
+  showStageButton: 0
+  stageButtonOn: {fileID: 21300006, guid: 80ecdf2be230880498d1946d0133774b, type: 3}
+  stageButtonOff: {fileID: 21300012, guid: 80ecdf2be230880498d1946d0133774b, type: 3}
+  stageButtonNextStageToPlay: {fileID: 21300004, guid: 80ecdf2be230880498d1946d0133774b, type: 3}
+  stageButtonTailDotOn: {fileID: 21300036, guid: 80ecdf2be230880498d1946d0133774b, type: 3}
+  stageButtonTailDotOff: {fileID: 21300034, guid: 80ecdf2be230880498d1946d0133774b, type: 3}
+  stageButtonNumber:
+    myFontAsset: 0
+    font: {fileID: 11400000, guid: b2dfe93d6516d5847992027f95bf7e24, type: 2}
+    myFontSize: 4
+    size: 42
+    myFontColor: 0
+    color: {r: 1, g: 1, b: 1, a: 1}
+  stageButtonStarCount:
+    myFontAsset: 0
+    font: {fileID: 11400000, guid: b2dfe93d6516d5847992027f95bf7e24, type: 2}
+    myFontSize: 0
+    size: 24
+    myFontColor: 0
+    color: {r: 1, g: 1, b: 1, a: 1}
+  totalWorlds: 2
+  showWorls: 0
+  worldButtonIcons:
+  - {fileID: 21300000, guid: 113d4a641922edb4eaa397e359ae5829, type: 3}
+  - {fileID: 21300000, guid: 3eb4509b01205694cb4918c8f3d8d9b3, type: 3}
+  worldButtonName:
+    myFontAsset: 0
+    font: {fileID: 11400000, guid: b2dfe93d6516d5847992027f95bf7e24, type: 2}
+    myFontSize: 0
+    size: 24
+    myFontColor: 0
+    color: {r: 1, g: 1, b: 1, a: 1}
+  worldButtonNumber:
+    myFontAsset: 0
+    font: {fileID: 11400000, guid: b2dfe93d6516d5847992027f95bf7e24, type: 2}
+    myFontSize: 3
+    size: 128
+    myFontColor: 0
+    color: {r: 1, g: 1, b: 1, a: 1}
+  worldButtonStarsNeed:
+    myFontAsset: 0
+    font: {fileID: 11400000, guid: b2dfe93d6516d5847992027f95bf7e24, type: 2}
+    myFontSize: 1
+    size: 32
+    myFontColor: 0
+    color: {r: 1, g: 1, b: 1, a: 1}
+  worldBackgrounds:
+  - {fileID: 21300000, guid: 646b843f437b74d49a0de25c332f45c2, type: 3}
+  - {fileID: 21300000, guid: 1f5465bbb023b344085a3df39b6560cf, type: 3}
+  showPageDot: 0
+  pageDotON:
+    sprite: {fileID: 21300036, guid: 80ecdf2be230880498d1946d0133774b, type: 3}
+    color: {r: 1, g: 1, b: 1, a: 1}
+  pageDotOFF:
+    sprite: {fileID: 21300034, guid: 80ecdf2be230880498d1946d0133774b, type: 3}
+    color: {r: 1, g: 1, b: 1, a: 1}
+  showScoreRecordScreenElement: 0
+  scoreScreenElementBK:
+    sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+    color: {r: 1, g: 1, b: 1, a: 0.19607843}
+  scoreRank:
+    myFontAsset: 0
+    font: {fileID: 11400000, guid: b2dfe93d6516d5847992027f95bf7e24, type: 2}
+    myFontSize: 2
+    size: 64
+    myFontColor: 0
+    color: {r: 1, g: 1, b: 1, a: 1}
+  scoreName:
+    myFontAsset: 0
+    font: {fileID: 11400000, guid: b2dfe93d6516d5847992027f95bf7e24, type: 2}
+    myFontSize: 1
+    size: 32
+    myFontColor: 0
+    color: {r: 1, g: 1, b: 1, a: 1}
+  scoreRecord:
+    myFontAsset: 0
+    font: {fileID: 11400000, guid: b2dfe93d6516d5847992027f95bf7e24, type: 2}
+    myFontSize: 1
+    size: 32
+    myFontColor: 0
+    color: {r: 1, g: 1, b: 1, a: 1}
+  showStoreItem: 0
+  storeItemOn:
+    sprite: {fileID: 21300006, guid: 80ecdf2be230880498d1946d0133774b, type: 3}
+    color: {r: 1, g: 1, b: 1, a: 1}
+  storeItemOff:
+    sprite: {fileID: 21300012, guid: 80ecdf2be230880498d1946d0133774b, type: 3}
+    color: {r: 1, g: 1, b: 1, a: 1}
+  storeItemSelected:
+    sprite: {fileID: 21300004, guid: 80ecdf2be230880498d1946d0133774b, type: 3}
+    color: {r: 1, g: 1, b: 1, a: 1}
+  storeItemCanBuyIco: {fileID: 21300006, guid: 7a11a235ab1099c40a15bff9c6c135a0, type: 3}
+  storeItemCantBuyIco: {fileID: 21300004, guid: 7a11a235ab1099c40a15bff9c6c135a0, type: 3}
+  storeItemName:
+    myFontAsset: 0
+    font: {fileID: 11400000, guid: b2dfe93d6516d5847992027f95bf7e24, type: 2}
+    myFontSize: 1
+    size: 32
+    myFontColor: 0
+    color: {r: 1, g: 1, b: 1, a: 1}
+  storeItemPrice:
+    myFontAsset: 0
+    font: {fileID: 11400000, guid: b2dfe93d6516d5847992027f95bf7e24, type: 2}
+    myFontSize: 0
+    size: 24
+    myFontColor: 0
+    color: {r: 1, g: 1, b: 1, a: 1}
+  storeItemQuantity:
+    myFontAsset: 0
+    font: {fileID: 11400000, guid: b2dfe93d6516d5847992027f95bf7e24, type: 2}
+    myFontSize: 0
+    size: 24
+    myFontColor: 0
+    color: {r: 1, g: 1, b: 1, a: 1}
+  storeItemBuyText:
+    myFontAsset: 0
+    font: {fileID: 11400000, guid: b2dfe93d6516d5847992027f95bf7e24, type: 2}
+    myFontSize: 1
+    size: 32
+    myFontColor: 0
+    color: {r: 1, g: 1, b: 1, a: 1}
+  showProfileItem: 0
+  profileItemOn: {fileID: 21300006, guid: 80ecdf2be230880498d1946d0133774b, type: 3}
+  profileItemOff: {fileID: 21300012, guid: 80ecdf2be230880498d1946d0133774b, type: 3}
+  profileItemSelected: {fileID: 21300004, guid: 80ecdf2be230880498d1946d0133774b, type: 3}
+  profileItemName:
+    myFontAsset: 0
+    font: {fileID: 11400000, guid: b2dfe93d6516d5847992027f95bf7e24, type: 2}
+    myFontSize: 1
+    size: 32
+    myFontColor: 0
+    color: {r: 1, g: 1, b: 1, a: 1}
+  profileItemNumber:
+    myFontAsset: 0
+    font: {fileID: 11400000, guid: b2dfe93d6516d5847992027f95bf7e24, type: 2}
+    myFontSize: 1
+    size: 32
+    myFontColor: 0
+    color: {r: 1, g: 1, b: 1, a: 1}
+  profileItemCount:
+    myFontAsset: 0
+    font: {fileID: 11400000, guid: b2dfe93d6516d5847992027f95bf7e24, type: 2}
+    myFontSize: 0
+    size: 24
+    myFontColor: 0
+    color: {r: 1, g: 1, b: 1, a: 1}
+  profileItemProgress:
+    myFontAsset: 0
+    font: {fileID: 11400000, guid: b2dfe93d6516d5847992027f95bf7e24, type: 2}
+    myFontSize: 0
+    size: 24
+    myFontColor: 0
+    color: {r: 1, g: 1, b: 1, a: 1}
+  showGameScene: 0
+  starScoreProgressBarBK:
+    sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+    color: {r: 0.2901961, g: 0.3254902, b: 0.39607844, a: 1}
+  starScoreProgressBarFill:
+    sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+    color: {r: 0.99607843, g: 0.8039216, b: 0.28627452, a: 1}
+  endScreenEmotions:
+  - {fileID: 21300010, guid: 7721b8dbcb8520543b0e8fbd2205aa6f, type: 3}
+  - {fileID: 21300008, guid: 7721b8dbcb8520543b0e8fbd2205aa6f, type: 3}
+  - {fileID: 21300006, guid: 7721b8dbcb8520543b0e8fbd2205aa6f, type: 3}
+  winScreenBK:
+    sprite: {fileID: 21300000, guid: 0910efe8567c1f34f9a1b5373a9fc41d, type: 3}
+    color: {r: 1, g: 1, b: 1, a: 1}
+  loseScreenBK:
+    sprite: {fileID: 21300000, guid: 0910efe8567c1f34f9a1b5373a9fc41d, type: 3}
+    color: {r: 1, g: 1, b: 1, a: 1}
+  bigStarOn: {fileID: 21300004, guid: 7721b8dbcb8520543b0e8fbd2205aa6f, type: 3}
+  bigStarOff: {fileID: 21300002, guid: 7721b8dbcb8520543b0e8fbd2205aa6f, type: 3}
