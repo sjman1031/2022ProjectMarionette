@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85c2fd45bea823248abb71b3da85eeaf, type: 3}
+  m_Name: OldMansionKey
+  m_EditorClassIdentifier: 
+  myName: Old Mansion Key
+  icon: {fileID: 21300032, guid: 80ecdf2be230880498d1946d0133774b, type: 3}
+  description: Unlock the old mansion
+  kind: 1

@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
-
 namespace Marionette
 {
     public enum BTNType
@@ -46,44 +45,44 @@ namespace Marionette
                     CanvasGroupOn(subGroup);
                     CanvasGroupOff(mainGroup);
 
-                    Debug.Log("¡∂¿€π˝");
+                    Debug.Log("Ï°∞ÏûëÎ≤ï");
                     break;
                 case BTNType.Option:
                     CanvasGroupOn(subGroup);
                     CanvasGroupOff(mainGroup);
 
-                    Debug.Log("º≥¡§");
+                    Debug.Log("ÏÑ§Ï†ï");
                     break;
                 case BTNType.Shop:
                     CanvasGroupOn(subGroup);
                     CanvasGroupOff(mainGroup);
 
-                    Debug.Log("ªÛ¡°");
+                    Debug.Log("ÏÉÅÏ†ê");
                     break;
                 case BTNType.Exit:
 
 
-                    Debug.Log("¡æ∑·");
+                    Debug.Log("Ï¢ÖÎ£å");
                     break;
                 case BTNType.Back:
                     CanvasGroupOn(mainGroup);
                     CanvasGroupOff(subGroup);
 
-                    Debug.Log("µ⁄∑Œ∞°±‚");
+                    Debug.Log("Îí§Î°úÍ∞ÄÍ∏∞");
                     break;
 
                 case BTNType.Start:
                     CanvasGroupOn(mainGroup);
                     CanvasGroupOff(startGroup);
 
-                    Debug.Log("∞‘¿”Ω√¿€!");
+                    Debug.Log("Í≤åÏûÑÏãúÏûë!");
                     break;
 
                 case BTNType.StageBack:
                     CanvasGroupOn(mainGroup);
                     CanvasGroupOff(stageGroup);
 
-                    Debug.Log("µ⁄∑Œ∞°±‚");
+                    Debug.Log("Îí§Î°úÍ∞ÄÍ∏∞");
                     break;
             }
         }
