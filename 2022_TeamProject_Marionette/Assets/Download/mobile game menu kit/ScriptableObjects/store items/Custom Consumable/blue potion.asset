@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a80b534526e2b846828d4a9aa940e58, type: 3}
+  m_Name: blue potion
+  m_EditorClassIdentifier: 
+  productIDWarning: 0
+  itemType: 0
+  productType: 0
+  priceCurrency: 0
+  consumable: {fileID: 11400000, guid: 66fc6c3ab199b9046b8fbc676a774ee6, type: 2}
+  nonConsumableItem: {fileID: 0}
+  incrementalItem: {fileID: 0}
+  myItem:
+  - myName: Mana potion
+    icon: {fileID: 21300000, guid: 186c459c6e1b3004490637ba8464577b, type: 3}
+    description: Restore 10 mana points
+    price: 25
+    productID: 
+  quantity: 1
+  quantityCap: 10
+  avaibleFromWorld: 0
+  avaibleFromStage: 0
