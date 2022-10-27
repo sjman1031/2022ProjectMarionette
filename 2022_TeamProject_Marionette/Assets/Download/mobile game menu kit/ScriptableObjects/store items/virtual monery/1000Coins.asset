@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a80b534526e2b846828d4a9aa940e58, type: 3}
+  m_Name: 1000Coins
+  m_EditorClassIdentifier: 
+  productIDWarning: 1
+  itemType: 1
+  productType: 0
+  priceCurrency: 1
+  consumable: {fileID: 0}
+  nonConsumableItem: {fileID: 0}
+  incrementalItem: {fileID: 0}
+  myItem:
+  - myName: Game coins
+    icon: {fileID: 0}
+    description: Get 1000 game coins
+    price: 0.1
+    productID: test_coin_1000
+  quantity: 1000
+  quantityCap: 0
+  avaibleFromWorld: 0
+  avaibleFromStage: 0
