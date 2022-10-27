@@ -1,6 +1,6 @@
 {
   "moveSpeed" : 5,
-  "handPower" : 70,
-  "footPower": 70,
+  "handPower" : 20,
+  "footPower": 20,
   "waitTime" :  0.5
 }
