@@ -4,95 +4,112 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
-public class BtnType : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+namespace Marionette
 {
-    public BTNType currentType;
-    public Transform buttonScale;
-    Vector3 defaultScale;
-    public CanvasGroup mainGroup;
-    public CanvasGroup subGroup;
-    public CanvasGroup startGroup;
-    public CanvasGroup stageGroup;
-    private void Start()
+    public enum BTNType
     {
-        defaultScale = buttonScale.localScale;
+        New,
+        Continue,
+        control,
+        Option,
+        Shop,
+        Exit,
+        Back,
+        Start,
+        StageBack
     }
-    public void OnBtnclick()
+
+    public class BtnType : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     {
-        switch(currentType)
+        public BTNType currentType;
+        public Transform buttonScale;
+        Vector3 defaultScale;
+        public CanvasGroup mainGroup;
+        public CanvasGroup subGroup;
+        public CanvasGroup startGroup;
+        public CanvasGroup stageGroup;
+        private void Start()
         {
-            case BTNType.New:
-                CanvasGroupOn(stageGroup);
-                CanvasGroupOff(mainGroup);              
+            defaultScale = buttonScale.localScale;
+        }
+        public void OnBtnclick()
+        {
+            switch (currentType)
+            {
+                case BTNType.New:
+                    CanvasGroupOn(stageGroup);
+                    CanvasGroupOff(mainGroup);
 
-                break;
-            case BTNType.control:
-                CanvasGroupOn(subGroup);
-                CanvasGroupOff(mainGroup);
+                    break;
+                case BTNType.control:
+                    CanvasGroupOn(subGroup);
+                    CanvasGroupOff(mainGroup);
 
-                Debug.Log("¡∂¿€π˝");
-                break;
-            case BTNType.Option:
-                CanvasGroupOn(subGroup);
-                CanvasGroupOff(mainGroup);
+                    Debug.Log("Ï°∞ÏûëÎ≤ï");
+                    break;
+                case BTNType.Option:
+                    CanvasGroupOn(subGroup);
+                    CanvasGroupOff(mainGroup);
 
-                Debug.Log("º≥¡§");
-                break;
-            case BTNType.Shop:
-                CanvasGroupOn(subGroup);
-                CanvasGroupOff(mainGroup);
+                    Debug.Log("ÏÑ§Ï†ï");
+                    break;
+                case BTNType.Shop:
+                    CanvasGroupOn(subGroup);
+                    CanvasGroupOff(mainGroup);
 
-                Debug.Log("ªÛ¡°");              
-                break;
-            case BTNType.Exit:
+                    Debug.Log("ÏÉÅÏ†ê");
+                    break;
+                case BTNType.Exit:
 
 
-                Debug.Log("¡æ∑·");
-                break;
-            case BTNType.Back:
-                CanvasGroupOn(mainGroup);
-                CanvasGroupOff(subGroup);
+                    Debug.Log("Ï¢ÖÎ£å");
+                    break;
+                case BTNType.Back:
+                    CanvasGroupOn(mainGroup);
+                    CanvasGroupOff(subGroup);
 
-                Debug.Log("µ⁄∑Œ∞°±‚");
-                break;
+                    Debug.Log("Îí§Î°úÍ∞ÄÍ∏∞");
+                    break;
 
-            case BTNType.Start:
-                CanvasGroupOn(mainGroup);
-                CanvasGroupOff(startGroup);
+                case BTNType.Start:
+                    CanvasGroupOn(mainGroup);
+                    CanvasGroupOff(startGroup);
 
-                Debug.Log("∞‘¿”Ω√¿€!");
-                break;
+                    Debug.Log("Í≤åÏûÑÏãúÏûë!");
+                    break;
 
-            case BTNType.StageBack:
-                CanvasGroupOn(mainGroup);
-                CanvasGroupOff(stageGroup);
+                case BTNType.StageBack:
+                    CanvasGroupOn(mainGroup);
+                    CanvasGroupOff(stageGroup);
 
-                Debug.Log("µ⁄∑Œ∞°±‚");
-                break;
+                    Debug.Log("Îí§Î°úÍ∞ÄÍ∏∞");
+                    break;
+            }
+        }
+
+        public void CanvasGroupOn(CanvasGroup cg)
+        {
+            cg.alpha = 1;
+            cg.interactable = true;
+            cg.blocksRaycasts = true;
+
+        }
+        public void CanvasGroupOff(CanvasGroup cg)
+        {
+            cg.alpha = 0;
+            cg.interactable = false;
+            cg.blocksRaycasts = false;
+        }
+
+        public void OnPointerEnter(PointerEventData eventData)
+        {
+            buttonScale.localScale = defaultScale * 1.2f;
+        }
+
+        public void OnPointerExit(PointerEventData eventData)
+        {
+            buttonScale.localScale = defaultScale;
         }
     }
 
-    public void CanvasGroupOn(CanvasGroup cg)
-    {
-        cg.alpha = 1;
-        cg.interactable = true;
-        cg.blocksRaycasts = true;
-
-    }
-    public void CanvasGroupOff(CanvasGroup cg)
-    {
-        cg.alpha = 0;
-        cg.interactable = false;
-        cg.blocksRaycasts = false;
-    }
-
-        public void OnPointerEnter(PointerEventData eventData)
-    {
-        buttonScale.localScale = defaultScale * 1.2f;
-    }
-
-    public void OnPointerExit(PointerEventData eventData)
-    {
-        buttonScale.localScale = defaultScale;
-    }
 }

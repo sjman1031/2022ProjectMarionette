@@ -1,0 +1,6 @@
+{
+  "moveSpeed" : 5,
+  "handPower" : 70,
+  "footPower": 70,
+  "waitTime" :  0.5
+}
