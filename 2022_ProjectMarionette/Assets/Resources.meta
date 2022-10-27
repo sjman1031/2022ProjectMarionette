@@ -1,5 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream
 guid: a16a543a1fd78a3489f362c46d2a628d
+=======
+<<<<<<< Updated upstream:2022_ProjectMarionette/Assets/Scripts/Move.meta
+guid: e0d95f81d18c9ef4c80921a66f146f6d
+=======
+guid: 187bb2a85757410499091095281c914f
+>>>>>>> Stashed changes:2022_ProjectMarionette/Assets/Resources.meta
+>>>>>>> Stashed changes
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
