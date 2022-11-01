@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace BaseFramework
+namespace BaseFrame
 {
     //오브젝트가 생성이 안되는 메니져
     public class SingletonT<T> where T : class, new()

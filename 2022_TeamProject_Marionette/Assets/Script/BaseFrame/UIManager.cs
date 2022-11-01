@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace BaseFramework
+namespace BaseFrame
 {
 
     public class UIManager : SingletonT<UIManager>

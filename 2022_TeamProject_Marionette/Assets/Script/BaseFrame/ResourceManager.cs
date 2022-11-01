@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace BaseFramework
+namespace BaseFrame
 {
 
     public class ResourceManager : SingletonT<ResourceManager>
