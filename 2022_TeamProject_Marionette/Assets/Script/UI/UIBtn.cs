@@ -19,7 +19,7 @@ namespace Marionette
         StageBack
     }
 
-    public class BtnType : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+    public class UIBtn : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     {
         public BTNType currentType;
         public Transform buttonScale;
