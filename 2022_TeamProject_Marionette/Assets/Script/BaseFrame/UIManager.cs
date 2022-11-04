@@ -24,7 +24,6 @@ namespace BaseFrame
 
         RectTransform m_pageRoot = null;
         RectTransform m_windowRoot = null;
-        RectTransform m_frontPageRoot = null;
         RectTransform m_popupRoot = null;
 
         RectTransform m_root = null;
@@ -45,8 +44,7 @@ namespace BaseFrame
             //임시 코드 리펙토링 후 주석 삭제
             m_pageRoot = roots[1];
             m_windowRoot = roots[2];
-            m_frontPageRoot = roots[3];
-            m_popupRoot = roots[4];
+            m_popupRoot = roots[3];
         }
 
         public void Clear()
@@ -129,11 +127,6 @@ namespace BaseFrame
             {
                 m_root = m_windowRoot;
                 return eUIDefine.Window;
-            }
-            else if (eType == eUIDefine.FrontPage)
-            {
-                m_root = m_frontPageRoot;
-                return eUIDefine.FrontPage;
             }
             else if(eType == eUIDefine.Popup)
             {
@@ -218,17 +211,6 @@ namespace BaseFrame
         }
 
 
-        #region TestCode
-        public void SetFadeInUI()
-        {
-
-        }
-
-        public void SetFadeOutUI()
-        {
-
-        }
-
-        #endregion TestCode
+        
     }
 }

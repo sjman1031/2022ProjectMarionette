@@ -10,13 +10,11 @@
 
     public enum eUIObject
     {
-        UIStartPage = 1001,
-        UIMainPage = 1003,
-        UIBattlePage = 1004,
-        UITestPage = 1101,
-        UILobbyWindow = 2001,
-        UILoadingFrontPage = 3002,
-        UITestPopup = 4001,
+        UIStartWindow = 2001,
+        UIMainWindow = 2002,
+        UIStageSelectWindow = 2003,
+        UIClearOverPopup =3001,
+        UIExitPopup = 3002,
         UIErrorPopup = 9002
     }
 
@@ -24,16 +22,13 @@
     {
         Page = 1,
         Window = 2,
-        FrontPage = 3,
-        Popup = 4,
+        Popup = 3,
         Notice = 9,
     }
 
     public enum eScene
     {
-        ArenaStartScene = 1,
-        ArenaLoadingScene = 2,
-        ArenaMainScene = 3,
-        ArenaBattleScene = 4
+        GameStartScene = 1,
+
     }
 }

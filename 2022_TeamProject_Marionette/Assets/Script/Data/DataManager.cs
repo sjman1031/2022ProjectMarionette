@@ -54,9 +54,9 @@ namespace Marionette
         {
             Start();
 
-            GameManager.Instance.handPower = data.handPower;
-            GameManager.Instance.footPower = data.footPower;
-            GameManager.Instance.moveSpeed = data.moveSpeed;
+            //GameManager.Instance.handPower = data.handPower;
+            //GameManager.Instance.footPower = data.footPower;
+            //GameManager.Instance.moveSpeed = data.moveSpeed;
         }
 
     }
