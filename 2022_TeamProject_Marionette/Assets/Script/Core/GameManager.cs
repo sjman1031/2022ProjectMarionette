@@ -1,60 +1,56 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Marionette;
-using UnityEditor.PackageManager;
+using UnityEngine.SceneManagement;
+using BaseFrame;
 
 namespace Marionette
 {
-    public class GameManager : MonoBehaviour
+    public class GameManager : MonoSingletonObject<GameManager>
     {
-        private static GameManager instance;
-
-        private void Awake()
+        #region MonoBehaviour
+        protected override void Awake()
         {
-            instance = this;
+            base.Awake();
+
+            s_instance = this;
+
+            initManager();
+
+            DontDestroyOnLoad(gameObject);
         }
 
-        public static GameManager Instance
+        void Start()
         {
-            get
-            {
-                if (null == instance)
-                    return null;
-
-                return instance;
-            }
+            UIManager.Instance.OpenUI<UIStartWindow>();
         }
 
-        public float handPower;
-        public float footPower;
-        public float moveSpeed;
-
-        private void Start()
+        protected override void OnDestroy()
         {
-            DataManager.Instance.Load_Data();
+
+            base.OnDestroy();
         }
 
-
-        private void Update()
+        protected override void OnApplicationQuit()
         {
-            if (Input.GetKey(KeyCode.A))
-                MoveManager.Instance.MoveRHand(handPower);
-            else if (Input.GetKey(KeyCode.S))
-                MoveManager.Instance.MoveLHand(handPower);
-            else if (Input.GetKey(KeyCode.D))
-                MoveManager.Instance.MoveRFoot(footPower);
-            else if (Input.GetKey(KeyCode.F))
-                MoveManager.Instance.MoveLFoot(footPower);
 
-            if (Input.GetKey(KeyCode.UpArrow))
-                MoveManager.Instance.HandleTransform.Translate(new Vector3(0f, 0f, moveSpeed * Time.deltaTime));
-            else if (Input.GetKey(KeyCode.DownArrow))
-                MoveManager.Instance.HandleTransform.Translate(new Vector3(0f, 0f, -moveSpeed * Time.deltaTime));
-            else if (Input.GetKey(KeyCode.RightArrow))
-                MoveManager.Instance.HandleTransform.Translate(new Vector3(moveSpeed * Time.deltaTime, 0f, 0f));
-            else if (Input.GetKey(KeyCode.LeftArrow))
-                MoveManager.Instance.HandleTransform.Translate(new Vector3(-moveSpeed * Time.deltaTime, 0f, 0f));
+            base.OnApplicationQuit();
+        }
+        #endregion MonoBehaviour
+
+
+        void initManager()
+        {
+            ResourceManager.Init();
+            UIManager.Init();
+        }
+
+        //2022.11.04 한택 : enum eScene순서는 빌드할때 Scene 순서와 맞춰서 넣을것
+        public void MoveScene(eScene sceneName, bool bRememberUIBeforeScene = false)
+        {
+            UIManager.Instance.MoveScene(bRememberUIBeforeScene);
+            SceneManager.LoadScene((int)sceneName);
         }
     }
+
 }
