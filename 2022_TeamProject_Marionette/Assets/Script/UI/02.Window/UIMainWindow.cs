@@ -18,22 +18,23 @@ namespace Marionette
             UIManager.Instance.OpenUI<UIStageSelectWindow>();
         }
 
-        public void OnClickOpenHowToPlay()
+        public void OnClickOpenHowToPlayPopup()
         {
             Debug.Log("Open UIHowToPlayPopup");
+            //UIManager.Instance.OpenUI<UIHowToPlayPopup>();
         }
 
-        public void OnClickOpenShop()
+        public void OnClickOpenShopPopup()
         {
             Debug.Log("Open UIShopWindow");
         }
 
-        public void OnClickOpenOption()
+        public void OnClickOpenOptionPopup()
         {
             Debug.Log("Open UIOptionPopup");
         }
 
-        public void OnClickOpenExit()
+        public void OnClickOpenExitPopup()
         {
             Debug.Log("Game Exit");
         }
