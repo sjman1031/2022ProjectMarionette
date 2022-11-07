@@ -15,6 +15,9 @@
         UIStageSelectWindow = 2003,
         UIClearOverPopup =3001,
         UIExitPopup = 3002,
+        UIHowToPlayPopup = 3003,
+        UIOptionPopup = 3004,
+        UIShopPopup = 3005,
         UIErrorPopup = 9002
     }
 
