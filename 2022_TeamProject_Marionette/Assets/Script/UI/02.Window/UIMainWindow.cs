@@ -11,28 +11,29 @@ namespace Marionette
         }
 
         #region Btn_Event
-        public void OnClickStageSelect()
+        public void OnClickOpenStageSelect()
         {
             Debug.Log("Open UIStageSelectWindow");
+            UIManager.Instance.CloseUI<UIMainWindow>();
             UIManager.Instance.OpenUI<UIStageSelectWindow>();
         }
 
-        public void OnClickHowToPlay()
+        public void OnClickOpenHowToPlay()
         {
             Debug.Log("Open UIHowToPlayPopup");
         }
 
-        public void OnClickShop()
+        public void OnClickOpenShop()
         {
-            Debug.Log("Open UIStageWindow");
+            Debug.Log("Open UIShopWindow");
         }
 
-        public void OnClickOption()
+        public void OnClickOpenOption()
         {
             Debug.Log("Open UIOptionPopup");
         }
 
-        public void OnClickExit()
+        public void OnClickOpenExit()
         {
             Debug.Log("Game Exit");
         }

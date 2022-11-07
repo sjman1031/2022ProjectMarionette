@@ -123,19 +123,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 765877237341059218}
         m_TargetAssemblyTypeName: Marionette.UIMainWindow, Assembly-CSharp
-        m_MethodName: OnClickOption
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
-        m_MethodName: OnSfx
+        m_MethodName: OnClickOpenOption
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -268,19 +256,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 765877237341059218}
         m_TargetAssemblyTypeName: Marionette.UIMainWindow, Assembly-CSharp
-        m_MethodName: OnClickShop
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
-        m_MethodName: OnSfx
+        m_MethodName: OnClickOpenShop
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -477,19 +453,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 765877237341059218}
         m_TargetAssemblyTypeName: Marionette.UIMainWindow, Assembly-CSharp
-        m_MethodName: OnClickStageSelect
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
-        m_MethodName: OnSfx
+        m_MethodName: OnClickOpenStageSelect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -622,19 +586,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 765877237341059218}
         m_TargetAssemblyTypeName: Marionette.UIMainWindow, Assembly-CSharp
-        m_MethodName: OnClickExit
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
-        m_MethodName: OnSfx
+        m_MethodName: OnClickOpenExit
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -767,19 +719,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 765877237341059218}
         m_TargetAssemblyTypeName: Marionette.UIMainWindow, Assembly-CSharp
-        m_MethodName: OnClickHowToPlay
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
-        m_MethodName: OnSfx
+        m_MethodName: OnClickOpenHowToPlay
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
