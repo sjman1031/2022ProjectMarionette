@@ -12,7 +12,7 @@ using System.Collections;
 using UnityEditor;
 
 [CustomEditor(typeof(ModulesShaker))]
-public class customButton : Editor
+public class CustomButton : Editor
 {
     public override void OnInspectorGUI()
     {
