@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class AnimalMove : MonoBehaviour
 {
+    public float X;
+    public float Y;
     float backMax = -5.0f;
 
     float goMax = 5.0f;
@@ -28,7 +30,7 @@ public class AnimalMove : MonoBehaviour
 
             currentPosition = goMax;
 
-            
+            transform.eulerAngles = new Vector3(0, 180, 0);
 
         }
 
@@ -41,11 +43,11 @@ public class AnimalMove : MonoBehaviour
 
             currentPosition = backMax;
 
-            
+            transform.eulerAngles = new Vector3(0, 0, 0);
 
         }
           
-        transform.position = new Vector3(22, 0, currentPosition);
+        transform.position = new Vector3(X, Y, currentPosition);
 
     }
 }

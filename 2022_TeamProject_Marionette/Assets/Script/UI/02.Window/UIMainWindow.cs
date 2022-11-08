@@ -32,11 +32,15 @@ namespace Marionette
         public void OnClickOpenOptionPopup()
         {
             Debug.Log("Open UIOptionPopup");
+            UIManager.Instance.CloseUI<UIMainWindow>();
+            UIManager.Instance.OpenUI<UIOptionPopup>();
         }
 
         public void OnClickOpenExitPopup()
         {
             Debug.Log("Game Exit");
+            UIManager.Instance.CloseUI<UIMainWindow>();
+            UIManager.Instance.OpenUI<UIExitPopup>();
         }
         #endregion
     }
