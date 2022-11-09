@@ -30,6 +30,12 @@ namespace Marionette
         {
             Debug.Log("NextChapter");
         }
+
+        public void OnClickBackWindow()
+        {
+            UIManager.Instance.CloseUI<UIStageSelectWindow>();
+            UIManager.Instance.OpenUI<UIMainWindow>();
+        }
         #endregion
     }
 }
