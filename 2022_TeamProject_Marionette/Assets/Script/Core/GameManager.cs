@@ -27,7 +27,6 @@ namespace Marionette
 
         protected override void OnDestroy()
         {
-
             base.OnDestroy();
         }
 
@@ -42,6 +41,7 @@ namespace Marionette
         void initManager()
         {
             ResourceManager.Init();
+            MoveManager.Init();
             UIManager.Init();
         }
 
@@ -50,8 +50,7 @@ namespace Marionette
         {
             UIManager.Instance.MoveScene(bRememberUIBeforeScene);
             SceneManager.LoadScene((int)sceneName);
-        }
-        
+        }       
     }
 
 }
