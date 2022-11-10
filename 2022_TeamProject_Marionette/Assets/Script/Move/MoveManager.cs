@@ -3,96 +3,46 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Marionette;
+using Unity.VisualScripting;
+using BaseFrame;
 
 namespace Marionette
 {
-    public class MoveManager : MonoBehaviour
+    public class MoveManager : SingletonT<MoveManager>
     {
-        private static MoveManager instance;
-
-        private void Awake()
+        protected override void onInit()
         {
-            instance = this;
+            base.onInit();
         }
 
-        public static MoveManager Instance
+        public void Player_Move(Transform player_TR, float fMoveSpeed)
         {
-            get
+            float inputX = Input.GetAxis("Horizontal");
+            float inputY = Input.GetAxis("Vertical");
+
+            Vector3 velocity = new Vector3(inputX, 0, inputY);
+            velocity *= fMoveSpeed;
+            player_TR.GetComponent<Rigidbody>().velocity = velocity;
+        }
+
+   
+        void Player_Jump(Transform player_TR, float fJumpSpeed, bool is_Jump)
+        {
+            if (Input.GetKeyDown(KeyCode.Space))
             {
-                if (null == instance)
-                    return null;
+                if (!is_Jump)
+                { 
+                    player_TR.GetComponent<Rigidbody>().AddForce(Vector3.up * fJumpSpeed, ForceMode.Impulse);
+                    is_Jump = true;
+                }
 
-                return instance;
-            }
-
-        }
-
-        [SerializeField]
-        private Transform rHandTransform;
-        [SerializeField]
-        private Transform lHandTransform;
-        [SerializeField]
-        private Transform rFootTransform;
-        [SerializeField]
-        private Transform lFootTransform;
-        [SerializeField]
-        private Transform handleTransform;
-        [SerializeField]
-        private float waitTime;
-
-        private void Start()
-        {
-            rHandTransform = GameObject.Find("Hand_R").GetComponent<Transform>();
-            lHandTransform = GameObject.Find("Hand_L").GetComponent<Transform>();
-            rFootTransform = GameObject.Find("Ankle_R").GetComponent<Transform>();
-            lFootTransform = GameObject.Find("Ankle_L").GetComponent<Transform>();
-            handleTransform = GameObject.Find("Handle").GetComponent<Transform>();
-
-            waitTime = DataManager.Instance.data.waitTime;
-        }
-
-        public Transform HandleTransform
-        {
-            get
-            {
-                if (null == handleTransform)
-                    return null;
-                return handleTransform;
+                return;
             }
         }
 
-        public void MoveRHand(float power)
+        private void OnCollisionEnter(Collision collision)
         {
-            if (rHandTransform.position.y <= 1.3586724996566773f)
-                rHandTransform.GetComponent<Rigidbody>().AddForce(new Vector3(0f, power, 0f));
-        }
-
-        public void MoveLHand(float power)
-        {
-            if (lHandTransform.position.y <= 1.3586724996566773f)
-                lHandTransform.GetComponent<Rigidbody>().AddForce(new Vector3(0f, power, 0f));
-        }
-
-        public void MoveRFoot(float power)
-        {
-            StartCoroutine(AddRFootPower(power));
-        }
-
-        public void MoveLFoot(float power)
-        {
-            StartCoroutine(AddLFootPower(power));
-        }
-
-        private IEnumerator AddRFootPower(float power)
-        {
-            rFootTransform.GetComponent<Rigidbody>().AddForce(new Vector3(0f, power, 0f));
-            yield return new WaitForSeconds(waitTime);
-        }
-
-        private IEnumerator AddLFootPower(float power)
-        {
-            lFootTransform.GetComponent<Rigidbody>().AddForce(new Vector3(0f, power, 0f));
-            yield return new WaitForSeconds(waitTime);
+            is_jump = false;
         }
     }
 }
