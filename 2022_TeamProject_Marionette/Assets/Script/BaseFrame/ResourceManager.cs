@@ -9,13 +9,14 @@ namespace BaseFrame
     {
         //Dictionary<Path, Object>
         //임시 - 생각 더 해봐야 할듯
-        private struct PrefabPath
+        private struct ResourcePath
         {
-            public const string Character = "Prefabs/Characters/{0}";
-            public const string UI = "Prefabs/UI/{0}";
-            public const string Animation = "Animations/{0}";
-            public const string Table = "Table";
-            public const string Normal = "Prefabs/{0}";
+            public const string Character   = "Prefabs/Characters/{0}";
+            public const string UI          = "Prefabs/UI/{0}";
+            public const string Stage       = "Prefabs/Stages/{0}";
+            public const string Normal      = "Prefabs/{0}";
+            public const string Animation   = "Animations/{0}";
+            public const string Table       = "Table/{0}";
         }
 
         //20.04.17 HT^^
@@ -23,6 +24,10 @@ namespace BaseFrame
         //그럴필요가 있을까 싶다.. 각 캐릭터들만이라도 모아둘까? 괜찮은 생각같은데...
         //일단 사용하지말고 더 살펴볼것
         //Dictionary<string, Object> m_dicObject = null;
+
+        #region Table Func
+        
+        #endregion
 
         #region Static Func
         public static T Load<T>(string path) where T : Object
@@ -57,7 +62,6 @@ namespace BaseFrame
         {
             base.onInit();
 
-
             //m_dicObject = new Dictionary<string, Object>();
         }
        
@@ -88,21 +92,25 @@ namespace BaseFrame
         }
 
         //코드 개선 필요
-        T doLoadToName<T>(eResourceType resourceType, string prefabName) where T : Object
+        T doLoadToName<T>(eResourceType resourceType, string resourceName) where T : Object
         {
             string path;
             string type = resourceType.ToString();
 
-            if (type.Equals(nameof(PrefabPath.Character)))
-                path = PrefabPath.Character;
-            else if (type.Equals(nameof(PrefabPath.UI)))
-                path = PrefabPath.UI;
-            else if (type.Equals(nameof(PrefabPath.Table)))
-                path = PrefabPath.Table;
+            if (type.Equals(nameof(ResourcePath.Character)))
+                path = ResourcePath.Character;
+            else if (type.Equals(nameof(ResourcePath.UI)))
+                path = ResourcePath.UI;
+            else if (type.Equals(nameof(ResourcePath.Stage)))
+                path = ResourcePath.Stage;
+            else if (type.Equals(nameof(ResourcePath.Animation)))
+                path = ResourcePath.Animation;
+            else if (type.Equals(nameof(ResourcePath.Table)))
+                path = ResourcePath.Table;
             else
-                path = PrefabPath.Normal;
+                path = ResourcePath.Normal;
 
-            path = string.Format(path, prefabName);
+            path = string.Format(path, resourceName);
 
             return doLoad<T>(path);
         }
@@ -112,10 +120,10 @@ namespace BaseFrame
             string path;
             string type = resourceType.ToString();
 
-            if (type.Equals(nameof(PrefabPath.Character)))
-                path = PrefabPath.Character;
-            else if (type.Equals(nameof(PrefabPath.UI)))
-                path = PrefabPath.UI;
+            if (type.Equals(nameof(ResourcePath.Character)))
+                path = ResourcePath.Character;
+            else if (type.Equals(nameof(ResourcePath.UI)))
+                path = ResourcePath.UI;
             else
             {
                 Debug.Log("[Error Code] doLoadAll<T> ");
@@ -137,7 +145,7 @@ namespace BaseFrame
         //List<AnimationClip> doLoadAnimations(string characterName)
         //{
         //    List<AnimationClip> lstAnimation = new List<AnimationClip>();
-        //    var animations = Resources.LoadAll(string.Format(PrefabPath.Animations,characterName));
+        //    var animations = Resources.LoadAll(string.Format(ResourcePath.Animations,characterName));
         //    if (animations != null)
         //    {
         //        for (int i = 0; i < animations.Length; i++)

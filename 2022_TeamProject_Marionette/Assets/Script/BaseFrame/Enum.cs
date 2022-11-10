@@ -3,9 +3,12 @@
    
     public enum eResourceType
     {
-        Table,
         Character,
-        UI
+        UI,
+        Stage,
+        Normal,
+        Animation,
+        Table,
     }
 
     public enum eUIObject
@@ -32,6 +35,7 @@
     public enum eScene
     {
         GameStartScene = 1,
+        GamePlayScene = 2,
 
     }
 }

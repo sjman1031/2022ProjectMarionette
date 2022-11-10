@@ -16,6 +16,7 @@ namespace Marionette
             s_instance = this;
 
             initManager();
+            ReadData();
 
             DontDestroyOnLoad(gameObject);
         }
@@ -43,6 +44,11 @@ namespace Marionette
             ResourceManager.Init();
             //MoveManager.Init();
             UIManager.Init();
+        }
+
+        public void ReadData()
+        {
+
         }
 
         //2022.11.04 한택 : enum eScene순서는 빌드할때 Scene 순서와 맞춰서 넣을것

@@ -5,17 +5,14 @@ using BaseFrame;
 
 namespace Marionette
 {
-    public class Character_Data
+    public class CHARACTER_DATA : TableData 
     {
-        private float moveSpeed;
-        private float jumpSpeed;
-
-        public float MoveSpeed { get { return moveSpeed; } set { moveSpeed = value; } }   
-        public float JumpSpeed { get { return jumpSpeed; } set { jumpSpeed = value; } }
+        public float moveSpeed;
+        public float jumpSpeed;
     }
 
     public class Character : MonoSingletonObject<Character>
-    {
-        public Character_Data charaData;  
+    { 
+
     }
 }

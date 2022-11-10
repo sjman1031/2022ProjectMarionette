@@ -31,14 +31,11 @@ namespace BaseFrame
         void Awake()
         {
             m_rTransform = GetComponent<RectTransform>();
-
         }
 
         public void SetData(IUIOpenParam args)
         {
-            setData(args);
-
-           
+            setData(args);         
         }
 
         public void SetActive(bool bActive)

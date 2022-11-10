@@ -24,9 +24,6 @@ public class AnimalMove1 : MonoBehaviour
         {
             sign *= -1;
             transform.eulerAngles = new Vector3(0, a, 0);
-        }
-
-        
-
+        }      
     }
 }
