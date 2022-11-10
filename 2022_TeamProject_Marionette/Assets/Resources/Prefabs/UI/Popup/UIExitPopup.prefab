@@ -1039,7 +1039,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 6666496028247138850}
         m_TargetAssemblyTypeName: Marionette.UIExitPopup, Assembly-CSharp
-        m_MethodName: OnClickNoBtn
+        m_MethodName: OnClickCloseExitPopup
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

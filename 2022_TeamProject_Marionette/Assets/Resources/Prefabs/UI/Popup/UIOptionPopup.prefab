@@ -622,6 +622,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5263877313823977976}
   - component: {fileID: 5263877313800376156}
+  - component: {fileID: 4300065322312816834}
   m_Layer: 5
   m_Name: Slider 1
   m_TagString: Untagged
@@ -695,28 +696,16 @@ MonoBehaviour:
   m_FillRect: {fileID: 5263877313823930236}
   m_HandleRect: {fileID: 0}
   m_Direction: 0
-  m_MinValue: 0
+  m_MinValue: 0.0001
   m_MaxValue: 1
   m_WholeNumbers: 0
   m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: Update_music_volume
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
-        m_MethodName: SetMusicVolume
+      - m_Target: {fileID: 4300065322312816834}
+        m_TargetAssemblyTypeName: SetValure, Assembly-CSharp
+        m_MethodName: SetLevel
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -726,6 +715,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &4300065322312816834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5263877313810063116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7c9cf52ac0221f499a63d0dd5c7cc1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mixer: {fileID: 24100000, guid: e1336505d03c7dd468dbea145ba4d0b4, type: 2}
 --- !u!1 &5263877313999472385
 GameObject:
   m_ObjectHideFlags: 0
@@ -737,6 +739,7 @@ GameObject:
   - component: {fileID: 5263877313999472390}
   - component: {fileID: 5263877313999472388}
   - component: {fileID: 9019570950820620843}
+  - component: {fileID: 4855077188373742527}
   m_Layer: 5
   m_Name: UIOptionPopup
   m_TagString: Untagged
@@ -789,6 +792,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_imgBg: {fileID: 0}
+--- !u!114 &4855077188373742527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5263877313999472385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7c9cf52ac0221f499a63d0dd5c7cc1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mixer: {fileID: 0}
 --- !u!1 &5263877314384966438
 GameObject:
   m_ObjectHideFlags: 0
@@ -913,7 +929,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 9019570950820620843}
         m_TargetAssemblyTypeName: Marionette.UIOptionPopup, Assembly-CSharp
-        m_MethodName: OnClickUIBack
+        m_MethodName: OnClickCloseUIOptionPopup
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1223,6 +1239,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5263877315482682412}
   - component: {fileID: 5263877315496852104}
+  - component: {fileID: 9058395666168869192}
   m_Layer: 5
   m_Name: Slider 1
   m_TagString: Untagged
@@ -1296,28 +1313,16 @@ MonoBehaviour:
   m_FillRect: {fileID: 5263877315482632872}
   m_HandleRect: {fileID: 0}
   m_Direction: 0
-  m_MinValue: 0
+  m_MinValue: 0.0001
   m_MaxValue: 1
   m_WholeNumbers: 0
   m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: Update_music_volume
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
-        m_MethodName: SetButtonVolume
+      - m_Target: {fileID: 9058395666168869192}
+        m_TargetAssemblyTypeName: SetValure, Assembly-CSharp
+        m_MethodName: SetLevel1
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1327,6 +1332,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &9058395666168869192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5263877315502336728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7c9cf52ac0221f499a63d0dd5c7cc1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mixer: {fileID: 24100000, guid: 67ede8efb1d896747b17f5386d67f9e5, type: 2}
 --- !u!1 &5263877315502339290
 GameObject:
   m_ObjectHideFlags: 0

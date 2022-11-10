@@ -13,14 +13,7 @@ namespace Marionette
 
 
         #region Btn_Event
-        public void OnClickUIOptionPopup()
-        {
-            Debug.Log("Open UIOptionPopup");
-            UIManager.Instance.CloseUI<UIMainWindow>();
-            UIManager.Instance.OpenUI<UIOptionPopup>();
-        }
-
-        public void OnClickUIBack()
+        public void OnClickCloseUIOptionPopup()
         {
             Debug.Log("close UIOptionPopup");
             UIManager.Instance.CloseUI<UIOptionPopup>();

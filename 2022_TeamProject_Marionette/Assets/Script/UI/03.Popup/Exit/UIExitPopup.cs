@@ -18,14 +18,7 @@ namespace Marionette
 
 
         #region Btn_Event
-        public void OnClickUIExitPopup()
-        {
-            Debug.Log("Open UIExitPopup");
-            UIManager.Instance.CloseUI<UIMainWindow>();
-            UIManager.Instance.OpenUI<UIExitPopup>();
-        }
-
-        public void OnClickNoBtn()
+        public void OnClickCloseExitPopup()
         {
             Debug.Log("Close UIExitPopup");
             UIManager.Instance.CloseUI<UIExitPopup>();

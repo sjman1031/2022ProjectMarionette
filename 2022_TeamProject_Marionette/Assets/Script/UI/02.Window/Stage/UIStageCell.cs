@@ -1,15 +1,22 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using BaseFrame;
 
-public class UIStageCell : MonoBehaviour
+namespace Marionette
 {
-
-
-
-    #region Btn_Event
-    public void OnClickStartStage()
+    public class UIStageCell : MonoBehaviour
     {
-        Debug.Log("Start Stage");
-    }
 
-    #endregion
+
+
+        #region Btn_Event
+        public void OnClickStartStage()
+        {
+            SceneManager.LoadScene("Tropical Cliffs");
+            Debug.Log("Start Stage");
+            UIManager.Instance.CloseUI<UIStageSelectWindow>();
+        }
+
+        #endregion
+    }
 }

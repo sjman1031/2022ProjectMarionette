@@ -37,5 +37,7 @@ namespace Marionette
             UIManager.Instance.OpenUI<UIMainWindow>();
         }
         #endregion
+
+        
     }
 }

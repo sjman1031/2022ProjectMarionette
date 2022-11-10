@@ -33,6 +33,7 @@ namespace Marionette
         {
             Debug.Log("Open UIOptionPopup");
             UIManager.Instance.CloseUI<UIMainWindow>();
+            UIManager.Instance.CloseUI<UIMainWindow>();
             UIManager.Instance.OpenUI<UIOptionPopup>();
         }
 

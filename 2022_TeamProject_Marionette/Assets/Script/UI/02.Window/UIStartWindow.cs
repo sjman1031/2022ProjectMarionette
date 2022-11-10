@@ -18,6 +18,7 @@ namespace Marionette
             Debug.Log("Open UIMainWindow");
             UIManager.Instance.CloseUI<UIStartWindow>();
             UIManager.Instance.OpenUI<UIMainWindow>();
+            
         }
         #endregion
     }

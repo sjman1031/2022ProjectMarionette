@@ -4,18 +4,16 @@ using UnityEngine;
 
 public class AnimalMove : MonoBehaviour
 {
-    public float X;
-    public float Y;
-    float backMax = -5.0f;
 
-    float goMax = 5.0f;
+    public float backMax;   //z축으로 최소 거리
+    public float goMax;     //z축으로 최대 거리
 
     float currentPosition; 
 
     float direction = 3.0f; 
     void Start()
     {
-        currentPosition = transform.position.z;
+        currentPosition = transform.position.x;
     }
 
     void Update()
@@ -47,7 +45,7 @@ public class AnimalMove : MonoBehaviour
 
         }
           
-        transform.position = new Vector3(X, Y, currentPosition);
+        transform.position = new Vector3(0, 0, currentPosition);
 
     }
 }
