@@ -41,7 +41,7 @@ namespace Marionette
         void initManager()
         {
             ResourceManager.Init();
-            MoveManager.Init();
+            //MoveManager.Init();
             UIManager.Init();
         }
 
