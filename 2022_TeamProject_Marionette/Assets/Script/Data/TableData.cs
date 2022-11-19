@@ -20,9 +20,9 @@ namespace Marionette
 
         Player_Data player_Data;
 
-        public List<float> GetPlayerData()
-        {
-            return player_Data;
-        }
+        //public List<float> GetPlayerData()
+        //{
+        //    return player_Data;
+        //}
     }
 }

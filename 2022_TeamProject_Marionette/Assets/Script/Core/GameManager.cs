@@ -44,11 +44,12 @@ namespace Marionette
             ResourceManager.Init();
             //MoveManager.Init();
             UIManager.Init();
+            DataManager.Init();
         }
 
         public void ReadData()
         {
-
+            DataManager.Instance.StartLoad();
         }
 
         //2022.11.04 한택 : enum eScene순서는 빌드할때 Scene 순서와 맞춰서 넣을것

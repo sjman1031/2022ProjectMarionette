@@ -115,6 +115,23 @@ namespace BaseFrame
             return doLoad<T>(path);
         }
 
+        //T doLoadTableData<T>() where T : TableData
+        //{
+        //    T tableData;
+
+        //    return tableData;
+
+        //}
+
+        List<TableData> doLoadAllTableData()
+        {
+
+            List<TableData> lstData = new List<TableData>();
+
+            return lstData;
+        }
+
+
         List<T> doLoadAll<T>(eResourceType resourceType) where T : Object
         {
             string path;

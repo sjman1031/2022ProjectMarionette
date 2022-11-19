@@ -4,8 +4,16 @@ using UnityEngine;
 
 namespace BaseFrame
 {
-    public class DataManager : SingletonT<DataManager>
+    public class TableDate
     {
 
+    }
+
+    public class DataManager : SingletonT<DataManager>
+    {
+        public void StartLoad()
+        {
+            //ResourceManager.loa
+        }
     }
 }
