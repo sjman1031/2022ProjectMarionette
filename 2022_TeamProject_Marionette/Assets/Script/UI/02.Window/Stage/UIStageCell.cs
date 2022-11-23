@@ -12,7 +12,7 @@ namespace Marionette
         #region Btn_Event
         public void OnClickStartStage()
         {
-            SceneManager.LoadScene("Tropical Cliffs");
+            SceneManager.LoadScene("GamePlayScene");
             Debug.Log("Start Stage");
             UIManager.Instance.CloseUI<UIStageSelectWindow>();
         }

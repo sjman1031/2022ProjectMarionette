@@ -14,13 +14,16 @@ namespace Marionette
         public void Replay()
         {
             Time.timeScale = 1;
-            SceneManager.LoadScene("Tropical Cliffs");
+            SceneManager.LoadScene("GamePlayScene");
+            UIManager.Instance.CloseUI<UIClearOverPopup>();
         }
         public void Maingo()
         {
+            UIManager.Instance.CloseUI<UIClearOverPopup>();
             Time.timeScale = 1;
             SceneManager.LoadScene("GameStartScene");
             UIManager.Instance.OpenUI<UIMainWindow>();
+            
         }
         public void Pause()
         {
@@ -32,15 +35,6 @@ namespace Marionette
             Time.timeScale = 1;
             PauseGUI.SetActive(false);
         }
-        public void GameOver()
-        {
-            Time.timeScale = 0;
-            GameOverGUI.SetActive(true);
-        }
-        public void GameClear()
-        {
-            Time.timeScale = 0;
-            ClearGUI.SetActive(true);
-        }
+        
     }
 }

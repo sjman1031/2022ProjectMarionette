@@ -7530,7 +7530,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2898008889440614493}
-  m_LocalRotation: {x: -0, y: -0.7821518, z: -0, w: 0.62308794}
+  m_LocalRotation: {x: 0, y: -0.78215164, z: 0, w: 0.6230882}
   m_LocalPosition: {x: 5.1, y: -0.064, z: 21.77}
   m_LocalScale: {x: 0.54922, y: 0.54922, z: 0.54922}
   m_ConstrainProportionsScale: 0
@@ -7576,7 +7576,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!136 &2896962045159861148
 CapsuleCollider:
@@ -7604,7 +7604,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e5c8434696e8cb4390b775884d04886, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IG: {fileID: 0}
+  CO: {fileID: 2926819976008394751, guid: cbada600f270ac14cb906957d464ba5b, type: 3}
 --- !u!1 &2898017929853992007
 GameObject:
   m_ObjectHideFlags: 0

@@ -5,12 +5,13 @@ using UnityEngine;
 public class AnimalMove : MonoBehaviour
 {
 
-    public float backMax;   //z축으로 최소 거리
-    public float goMax;     //z축으로 최대 거리
-
-    float currentPosition; 
-
-    float direction = 3.0f; 
+    public float backMax;   
+    public float goMax;
+    public float StartY;
+    public float StartZ;
+    public float rotation;
+    float currentPosition;
+    public float speed; 
     void Start()
     {
         currentPosition = transform.position.x;
@@ -18,17 +19,16 @@ public class AnimalMove : MonoBehaviour
 
     void Update()
     {
-        currentPosition += Time.deltaTime * direction;
+        currentPosition += Time.deltaTime * speed;
 
         if (currentPosition >= goMax)
 
         {
-
-            direction *= -1;
+            speed *= -1;
 
             currentPosition = goMax;
 
-            transform.eulerAngles = new Vector3(0, 180, 0);
+            transform.eulerAngles = new Vector3(0,rotation + 180, 0);
 
         }
 
@@ -36,16 +36,15 @@ public class AnimalMove : MonoBehaviour
         else if (currentPosition <= backMax)
 
         {
-
-            direction *= -1;
+            speed *= -1;
 
             currentPosition = backMax;
 
-            transform.eulerAngles = new Vector3(0, 0, 0);
+            transform.eulerAngles = new Vector3(0, rotation, 0);
 
         }
           
-        transform.position = new Vector3(0, 0, currentPosition);
+        transform.position = new Vector3(currentPosition, StartY, StartZ);
 
     }
 }

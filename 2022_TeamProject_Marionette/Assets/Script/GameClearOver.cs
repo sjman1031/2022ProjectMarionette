@@ -6,30 +6,23 @@ namespace Marionette
 {
     public class GameClearOver : MonoBehaviour
     {
-        public INGameUIPopup IG;
-        private void OnCollisionEnter(Collision collision)
+        public UIClearOverPopup CO;
+        private void OnTriggerEnter(Collider other)
         {
-            if (collision.gameObject.tag == "RedObject")
+            if (other.tag == "RedObject")
             {
-                Time.timeScale = 0;
                 Debug.Log("게임오버");
-                GameOver();
+                CO.OverPopup ();
             }
-            if (collision.gameObject.tag == "GreenObject")
+            else if (other.tag == "GreenObject")
             {
-                Time.timeScale = 0;
-                Debug.Log("클리어");
-                GameClear();
+                CO.ClearPopup();
+                Debug.Log("게임클리어");
+                
             }
+            
         }
 
-        void GameOver()
-        {
-            IG.GameOver();
-        }
-        void GameClear()
-        {
-            IG.GameClear();
-        }
     }
+
 }
