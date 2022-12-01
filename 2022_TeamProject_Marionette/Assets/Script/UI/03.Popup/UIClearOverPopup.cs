@@ -18,25 +18,23 @@ namespace Marionette
         GameObject m_objGameClear = null;
         [SerializeField]
         GameObject m_objGameOver = null;
+        #endregion
 
         public GameObject Clear;
         public GameObject Over;
+
         public void ClearPopup()
         {
             UIManager.Instance.OpenUI<UIClearOverPopup>();
+            Clear.SetActive(true);
+            Over.SetActive(false);
         }
+
         public void OverPopup()
         {
+            UIManager.Instance.OpenUI<UIClearOverPopup>();
             Clear.SetActive(false);
             Over.SetActive(true);
-            UIManager.Instance.OpenUI<UIClearOverPopup>();
-            
         }
-        #endregion
-
-
-
-
-
     }
 }
