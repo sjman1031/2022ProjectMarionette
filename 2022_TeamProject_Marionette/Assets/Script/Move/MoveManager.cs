@@ -26,7 +26,7 @@ namespace Marionette
 
         public void Player_Move(Transform player_TR, float fMoveSpeed)
         {
-            float inputX = Input.GetAxis("Horizontal");
+            float inputX = Input.GetAxis("ve");
             float inputY = Input.GetAxis("Vertical");
 
             float fallSpeed = player_TR.GetComponent<Rigidbody>().velocity.y;

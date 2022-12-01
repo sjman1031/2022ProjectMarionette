@@ -11,11 +11,12 @@ namespace Marionette
         }
 
         #region Btn_Event
+        public AudioSource btnsource;
         public void OnClickOpenStageSelect()
         {
             Debug.Log("Open UIStageSelectWindow");
             UIManager.Instance.CloseUI<UIMainWindow>();
-            UIManager.Instance.OpenUI<UIStageSelectWindow>();            
+            UIManager.Instance.OpenUI<UIStageSelectWindow>();
         }
 
         public void OnClickOpenHowToPlayPopup()
@@ -33,8 +34,8 @@ namespace Marionette
         {
             Debug.Log("Open UIOptionPopup");
             UIManager.Instance.CloseUI<UIMainWindow>();
+            UIManager.Instance.CloseUI<UIMainWindow>();
             UIManager.Instance.OpenUI<UIOptionPopup>();
-            
         }
 
         public void OnClickOpenExitPopup()
@@ -42,6 +43,11 @@ namespace Marionette
             Debug.Log("Game Exit");
             UIManager.Instance.CloseUI<UIMainWindow>();
             UIManager.Instance.OpenUI<UIExitPopup>();
+        }
+
+        public void OnClickBTNSound()
+        {
+            btnsource.Play();
         }
         #endregion
     }

@@ -23,19 +23,14 @@ namespace Marionette
         public GameObject Over;
         public void ClearPopup()
         {
-            Clear.SetActive(true);
-            Over.SetActive(false);
             UIManager.Instance.OpenUI<UIClearOverPopup>();
-            Clear.SetActive(true);
-            Over.SetActive(false); 
         }
         public void OverPopup()
         {
             Clear.SetActive(false);
             Over.SetActive(true);
-            UIManager.Instance.OpenUI<UIClearOverPopup>(); 
-            Clear.SetActive(false);
-            Over.SetActive(true);         
+            UIManager.Instance.OpenUI<UIClearOverPopup>();
+            
         }
         #endregion
 

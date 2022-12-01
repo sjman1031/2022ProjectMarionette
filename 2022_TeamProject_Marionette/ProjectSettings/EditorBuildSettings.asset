@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/GameStartScene.unity
     guid: 388c27149f123964ab8de2ceb0d858fe
   - enabled: 1
-    path: Assets/Scenes/GamePlayScene.unity
+    path: Assets/Scenes/Tropical Cliffs.unity
     guid: 5d25413e9a4a74944a4f56656e700749
   m_configObjects: {}
