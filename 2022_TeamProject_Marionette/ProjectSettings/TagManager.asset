@@ -6,7 +6,7 @@ TagManager:
   tags:
   - RedObject
   - GreenObject
-  - Ground
+  - Plan
   layers:
   - Default
   - TransparentFX
