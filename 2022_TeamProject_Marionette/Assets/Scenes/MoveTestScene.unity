@@ -219,8 +219,65 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &75582563
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2898008889440614493, guid: 8c78ea722d2a78e418553c0d44706c40, type: 3}
+      propertyPath: m_Name
+      value: Basic_Chara
+      objectReference: {fileID: 0}
+    - target: {fileID: 2898679492042903061, guid: 8c78ea722d2a78e418553c0d44706c40, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2898679492042903061, guid: 8c78ea722d2a78e418553c0d44706c40, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2898679492042903061, guid: 8c78ea722d2a78e418553c0d44706c40, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.064
+      objectReference: {fileID: 0}
+    - target: {fileID: 2898679492042903061, guid: 8c78ea722d2a78e418553c0d44706c40, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 21.77
+      objectReference: {fileID: 0}
+    - target: {fileID: 2898679492042903061, guid: 8c78ea722d2a78e418553c0d44706c40, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6230882
+      objectReference: {fileID: 0}
+    - target: {fileID: 2898679492042903061, guid: 8c78ea722d2a78e418553c0d44706c40, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2898679492042903061, guid: 8c78ea722d2a78e418553c0d44706c40, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.78215164
+      objectReference: {fileID: 0}
+    - target: {fileID: 2898679492042903061, guid: 8c78ea722d2a78e418553c0d44706c40, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2898679492042903061, guid: 8c78ea722d2a78e418553c0d44706c40, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2898679492042903061, guid: 8c78ea722d2a78e418553c0d44706c40, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -102.916
+      objectReference: {fileID: 0}
+    - target: {fileID: 2898679492042903061, guid: 8c78ea722d2a78e418553c0d44706c40, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8c78ea722d2a78e418553c0d44706c40, type: 3}
 --- !u!1 &1140218939
 GameObject:
   m_ObjectHideFlags: 0
@@ -303,7 +360,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1315349876
 GameObject:
@@ -397,75 +454,5 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!1001 &2052715838
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 748149478949077435, guid: 24e928b57606bdc4697fcb3b468f239b, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 10c461fe32fa8564088f70f6a3aae1db, type: 2}
-    - target: {fileID: 748149478949077435, guid: 24e928b57606bdc4697fcb3b468f239b, type: 3}
-      propertyPath: m_WarningMessage
-      value: "\nBinding warning: Some generic clip(s) animate transforms that are
-        already bound by a Humanoid avatar. These transforms can only be changed
-        by Humanoid clips.\n\tTransform 'Spine_03'\n\tTransform 'Ankle_L'\n\tTransform
-        'Hand_R'\n\tTransform 'Schoulder_L'\n\tTransform 'Ankle_R'\n\tTransform 'Finger_01'\n\tTransform
-        'IndexFinger_02'\n\tTransform 'UpperLeg_R'\n\tTransform 'Hand_L'\n\tTransform
-        'Clavicle_R'\n\tand more ...\n\tFrom animation clip 'Standing Idle'"
-      objectReference: {fileID: 0}
-    - target: {fileID: 808063112507501085, guid: 24e928b57606bdc4697fcb3b468f239b, type: 3}
-      propertyPath: m_Name
-      value: Ragdoll Prefabs
-      objectReference: {fileID: 0}
-    - target: {fileID: 809301058881739861, guid: 24e928b57606bdc4697fcb3b468f239b, type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 809301058881739861, guid: 24e928b57606bdc4697fcb3b468f239b, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 809301058881739861, guid: 24e928b57606bdc4697fcb3b468f239b, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 809301058881739861, guid: 24e928b57606bdc4697fcb3b468f239b, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 809301058881739861, guid: 24e928b57606bdc4697fcb3b468f239b, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 809301058881739861, guid: 24e928b57606bdc4697fcb3b468f239b, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 809301058881739861, guid: 24e928b57606bdc4697fcb3b468f239b, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 809301058881739861, guid: 24e928b57606bdc4697fcb3b468f239b, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 809301058881739861, guid: 24e928b57606bdc4697fcb3b468f239b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 809301058881739861, guid: 24e928b57606bdc4697fcb3b468f239b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 809301058881739861, guid: 24e928b57606bdc4697fcb3b468f239b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 24e928b57606bdc4697fcb3b468f239b, type: 3}
