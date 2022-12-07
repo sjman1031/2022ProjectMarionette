@@ -16,8 +16,8 @@ namespace Marionette
             }
             else if (other.tag == "GreenObject")
             {
-                CO.ClearPopup();
                 Debug.Log("게임클리어");
+                CO.ClearPopup();
                 
             }
             
