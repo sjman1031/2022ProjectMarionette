@@ -6,19 +6,22 @@ namespace Marionette
 {
     public class GameClearOver : MonoBehaviour
     {
-        public UIClearOverPopup CO;
+        public UIClearPopup Cl;
+        public UIOverPopup Ov;
         private void OnTriggerEnter(Collider other)
         {
             if (other.tag == "RedObject")
             {
                 Debug.Log("게임오버");
-                CO.OverPopup ();
+                
+                Ov.OverPopup();
             }
             else if (other.tag == "GreenObject")
             {
                 Debug.Log("게임클리어");
-                CO.ClearPopup();
                 
+                Cl.ClearPopup();
+
             }
             
         }

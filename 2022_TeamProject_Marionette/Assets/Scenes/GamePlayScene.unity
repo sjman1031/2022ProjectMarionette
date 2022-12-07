@@ -537,8 +537,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_imgBg: {fileID: 0}
   PauseGUI: {fileID: 586863602}
-  GameOverGUI: {fileID: 0}
-  ClearGUI: {fileID: 0}
 --- !u!1 &1175579862
 GameObject:
   m_ObjectHideFlags: 0
@@ -1170,6 +1168,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2896962045159861146, guid: 8c78ea722d2a78e418553c0d44706c40, type: 3}
+      propertyPath: Cl
+      value: 
+      objectReference: {fileID: 3560260004175473402, guid: bfc4ba129a26f374c9cebb56c4a4717b, type: 3}
+    - target: {fileID: 2896962045159861146, guid: 8c78ea722d2a78e418553c0d44706c40, type: 3}
+      propertyPath: Ov
+      value: 
+      objectReference: {fileID: 7449302149904051142, guid: 2f037d291b17dd4429353235b244c662, type: 3}
     - target: {fileID: 2896962045159861149, guid: 8c78ea722d2a78e418553c0d44706c40, type: 3}
       propertyPath: m_Constraints
       value: 112

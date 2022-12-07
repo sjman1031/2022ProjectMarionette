@@ -21,6 +21,8 @@
         UIHowToPlayPopup = 3003,
         UIOptionPopup = 3004,
         UIShopPopup = 3005,
+        UIOverPopup = 3006,
+        UIClearPopup = 3007,
         UIErrorPopup = 9002
     }
 

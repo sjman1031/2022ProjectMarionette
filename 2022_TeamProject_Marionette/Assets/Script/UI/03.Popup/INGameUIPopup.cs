@@ -9,21 +9,21 @@ namespace Marionette
     public class INGameUIPopup : UIBase
     {
         public GameObject PauseGUI;
-        public GameObject GameOverGUI;
-        public GameObject ClearGUI;
         public void Replay()
         {
             Time.timeScale = 1;
             SceneManager.LoadScene("GamePlayScene");
-            UIManager.Instance.CloseUI<UIClearOverPopup>();
+            UIManager.Instance.CloseUI<UIOverPopup>();
+            UIManager.Instance.CloseUI<UIClearPopup>();
         }
         public void Maingo()
         {
-            UIManager.Instance.CloseUI<UIClearOverPopup>();
+            UIManager.Instance.CloseUI<UIOverPopup>();
+            UIManager.Instance.CloseUI<UIClearPopup>();
             Time.timeScale = 1;
             SceneManager.LoadScene("GameStartScene");
-            UIManager.Instance.OpenUI<UIMainWindow>();
-            
+            //UIManager.Instance.OpenUI<UIMainWindow>();
+
         }
         public void Pause()
         {

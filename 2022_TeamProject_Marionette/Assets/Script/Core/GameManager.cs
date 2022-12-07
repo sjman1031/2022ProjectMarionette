@@ -8,6 +8,8 @@ namespace Marionette
 {
     public class GameManager : MonoSingletonObject<GameManager>
     {
+        public int iSceneLoadCnt = 0;
+
         #region MonoBehaviour
         protected override void Awake()
         {
@@ -21,9 +23,25 @@ namespace Marionette
             DontDestroyOnLoad(gameObject);
         }
 
-        void Start()
+        private void OnEnable()
         {
-            UIManager.Instance.OpenUI<UIStartWindow>();
+            SceneManager.sceneLoaded += OnSceneLoaded;
+        }
+
+        private void OnDisable()
+        {
+            SceneManager.sceneLoaded -= OnSceneLoaded;
+        }
+
+        private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+        {
+            if (SceneManager.GetActiveScene().name == "GameStartScene" && iSceneLoadCnt == 0)
+            {
+                UIManager.Instance.OpenUI<UIStartWindow>();
+                iSceneLoadCnt++;
+            }
+            else if (SceneManager.GetActiveScene().name == "GameStartScene" && iSceneLoadCnt > 0)
+                UIManager.Instance.OpenUI<UIMainWindow>();
         }
 
         protected override void OnDestroy()
