@@ -9,6 +9,9 @@ public class SoundManager : MonoBehaviour
 
     public AudioSource btnsource;
 
+    static AudioSource audiosource;
+    public AudioClip audioclip;
+
     public void SetMusicVolume(float volume)
     {
         musicsource.volume = volume;
@@ -22,5 +25,10 @@ public class SoundManager : MonoBehaviour
     public void OnSfx()
     {
         btnsource.Play();
+    }
+
+    public void CoinSound()
+    {
+        audiosource.PlayOneShot(audioclip);
     }
 }

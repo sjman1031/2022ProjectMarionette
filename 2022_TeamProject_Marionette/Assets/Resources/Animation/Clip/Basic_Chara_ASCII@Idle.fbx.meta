@@ -419,11 +419,16 @@ ModelImporter:
     skeleton:
     - name: Basic_Chara_ASCII@Idle(Clone)
       parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Basic_Chara
+      parentName: Basic_Chara_ASCII@Idle(Clone)
       position: {x: 0.050247498, y: -0.059806213, z: 0.051602498}
       rotation: {x: -0.03670554, y: 0.36666647, z: 0.012725773, w: 0.929541}
       scale: {x: 1, y: 1, z: 1}
     - name: Armature
-      parentName: Basic_Chara_ASCII@Idle(Clone)
+      parentName: Basic_Chara
       position: {x: -0, y: 0, z: 0}
       rotation: {x: -0.7069846, y: 0, z: -0, w: 0.70722896}
       scale: {x: 1, y: 1, z: 1}
@@ -713,7 +718,7 @@ ModelImporter:
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Female_Body
-      parentName: Basic_Chara_ASCII@Idle(Clone)
+      parentName: Basic_Chara
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
@@ -842,7 +847,7 @@ ModelImporter:
     globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
