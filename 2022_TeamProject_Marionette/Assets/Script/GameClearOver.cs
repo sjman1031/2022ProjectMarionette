@@ -13,13 +13,13 @@ namespace Marionette
             if (other.tag == "RedObject")
             {
                 Debug.Log("게임오버");
-                
+                Time.timeScale = 0;
                 Ov.OverPopup();
             }
             else if (other.tag == "GreenObject")
             {
                 Debug.Log("게임클리어");
-                
+                Time.timeScale = 0;
                 Cl.ClearPopup();
 
             }

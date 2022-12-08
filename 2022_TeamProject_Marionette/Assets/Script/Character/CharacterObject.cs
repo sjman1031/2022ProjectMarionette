@@ -61,5 +61,6 @@ namespace Marionette
             if(collision.transform.tag == "Ground")
                 bIsJump = false;
         }
+
     }
 }

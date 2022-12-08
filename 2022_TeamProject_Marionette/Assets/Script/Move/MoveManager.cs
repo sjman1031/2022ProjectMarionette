@@ -17,10 +17,29 @@ namespace Marionette
 
         bool is_Jump = false;
 
+        public bool toggleCameraRotation;
+        public float smoothness = 10f;
+
+        Camera _camera;
+        private void Start()
+        {
+            _camera = Camera.main;
+        }
+
         private void Update()
         {
             Player_Move(transform, 5f);
             Player_Jump(transform, 5f);
+
+            if (Input.GetKey(KeyCode.LeftAlt))
+            {
+                toggleCameraRotation = true;
+
+            }
+            else
+            {
+                toggleCameraRotation = false;
+            }
         }
 
 
@@ -53,6 +72,14 @@ namespace Marionette
         private void OnCollisionEnter(Collision collision)
         {
             is_Jump = false;
+        }
+        void LateUpdate()
+        {
+            if (toggleCameraRotation != true)
+            {
+                Vector3 playerRotate = Vector3.Scale(_camera.transform.forward, new Vector3(1, 0, 1));
+                transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(playerRotate), Time.deltaTime * smoothness);
+            }
         }
     }
 }
